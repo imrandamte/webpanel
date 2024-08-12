@@ -1,0 +1,45 @@
+ 
+
+.movie-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(25% - 30px); /* Flex item that takes up 25% width minus margins */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: calc(25% - 30px); /* Ensure max width for each card */
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.movie-card h3 {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        flex: 1 1 calc(50% - 30px); /* Adjust to 50% width on smaller screens */
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        flex: 1 1 100%; /* Full width on very small screens */
+        max-width: 100%;
+    }
+}

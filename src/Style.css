@@ -1,0 +1,91 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+nav {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+}
+
+nav input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+nav button {
+    background-color: #28a745;
+    color: white;
+}
+
+.navbar-item {
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav form {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
